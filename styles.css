@@ -10,12 +10,25 @@
   width: 200px;
   margin: 4rem auto;
   border-radius: 50%;
+  position: relative;
 }
 
 .eye {
   height: 50px;
   width: 50px;
-  background-color: red;
+  background-color: whitesmoke;
   border: 1px solid black;
   border-radius: 50%;
+}
+
+.eye.left {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
+
+.eye.right {
+  position: absolute;
+  top: 60px;
+  left: 120px;
 }
