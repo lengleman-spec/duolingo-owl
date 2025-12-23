@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.owl {
+  background-color: lightgreen;
+  height: 220px;
+  width: 200px;
+  margin: 4rem auto;
+  border-radius: 50%;
+}
+
+.eye {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 50%;
+}
