@@ -19,6 +19,8 @@
   background-color: whitesmoke;
   border: 1px solid black;
   border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
 }
 
 .eye.left {
@@ -53,12 +55,11 @@
   left: 10px;
 }
 
-/* .pupil {
-  height: 22px;
-  width: 20px;
-  background-color: black;
-  border-radius: 50%;
+.eyelid {
   position: absolute;
-  top: 16px;
-  left: 16px;
-} */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #58cc02;
+}
