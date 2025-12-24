@@ -62,4 +62,8 @@
   height: 100%;
   width: 100%;
   background: #58cc02;
+  transform: scaleY(
+    0
+  ); /*The height becomes 0 - Hides the eyelids so that the eyelids aren't closed by default.*/
+  transform-origin: top; /*Closes eyes downward*/
 }
