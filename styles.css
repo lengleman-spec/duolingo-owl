@@ -4,13 +4,40 @@
   box-sizing: border-box;
 }
 
+.body {
+  z-index: 2;
+}
+
 .owl {
   background-color: lightgreen;
   height: 220px;
   width: 200px;
   margin: 4rem auto;
-  border-radius: 50%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   position: relative;
+}
+
+.wing {
+  position: absolute;
+  top: 120px;
+  height: 90px;
+  width: 70px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.wing.wing-left {
+  left: -30px;
+  transform: rotate(20deg);
+}
+
+.wing.wing-right {
+  left: 150px;
+  transform: rotate(-20deg);
 }
 
 .eye {
