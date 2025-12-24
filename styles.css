@@ -35,24 +35,14 @@
   left: 120px;
 }
 
-.eye.left .pupil {
-  height: 22px;
+.pupil {
+  height: 20px;
   width: 20px;
   background-color: black;
   border-radius: 50%;
   position: absolute;
   top: 16px;
   left: 16px;
-}
-
-.eye.right .pupil {
-  height: 22px;
-  width: 20px;
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-  top: 16px;
-  left: 10px;
 }
 
 .eyelid {
@@ -66,4 +56,19 @@
     0
   ); /*The height becomes 0 - Hides the eyelids so that the eyelids aren't closed by default.*/
   transform-origin: top; /*Closes eyes downward*/
+
+  animation: blink 4s infinite;
+}
+
+/* KEYFRAMES */
+@keyframes blink {
+  0%,
+  95%,
+  100% {
+    transform: scaleY(0);
+  }
+
+  97% {
+    transform: scaleY(1);
+  }
 }
