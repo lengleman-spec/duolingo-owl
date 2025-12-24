@@ -95,40 +95,39 @@
     0
   ); /*The height becomes 0 - Hides the eyelids so that the eyelids aren't closed by default.*/
   transform-origin: top; /*Closes eyes downward*/
-
   animation: blink 4s infinite;
 }
 
 .beak {
   position: absolute;
-  top: 100px;
+  top: 105px;
   left: 50%;
   transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  z-index: 3;
+  width: 26px;
+  height: 20px;
+  z-index: 4;
 }
 
 .beak::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -14px;
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  border-top: 14px solid yellow;
-  border-radius: 0 0 10px 10px;
+  left: 0;
+  width: 26px;
+  height: 14px;
+  background: #f4c430;
+  border-radius: 0 0 14px 14px;
 }
 
 .beak::after {
   content: "";
   position: absolute;
-  left: -12px;
-  top: 10px;
-
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 12px solid #e0b020;
+  top: 8px;
+  left: 4px;
+  width: 18px;
+  height: 10px;
+  background: #e0b020;
+  border-radius: 0 0 10px 10px;
 }
 
 /* KEYFRAMES */
